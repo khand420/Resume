@@ -1,0 +1,16 @@
+
+{% load static  %}
+
+<div class="border-right border-warning h-100">
+  <div class="text-center">
+  <img src="{% static 'images/khand.jpg' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+  <h3 class="text-white mb-2 st-font">Danish khan</h3>
+  </div>
+  <hr class="border-light"> 
+  <nav class="nav flex-column text-center">
+  <a href="{% url 'home' %}" class="nav-link {{HomeActive}}">Home</a>
+  <a href="{% url 'services' %}" class="nav-link {{ServiceActive}}">Services</a>
+  <a href="/Skill/" class="nav-link {{SkillActive}}">Skill</a>
+  <a href="/Contact/" class="nav-link {{ContactActive}}">Contact</a>
+  </nav>
+  </div>
